@@ -47,6 +47,7 @@ h2 {
 }
 
 button {
+  font-family: "Montserrat", sans-serif;
   margin: 6px;
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
@@ -150,22 +151,55 @@ button {
   background-color: var(--color-start);
 }
 
-.start a {
+/* .start-a {
   color: #fff;
-}
+} */
 
 .win {
   background-color: var(--color-win);
 }
 
-.win a {
-  color: var(--color-win);
+.win-a {
+  background-color: orange;
+  color: #fff;
+}
+
+.p {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .lose {
   background-color: var(--color-lose);
 }
 
-.lose a {
-  color: var(--color-lose);
+.lose-a {
+  background-color: orange;
+  color: #fff;
+}
+
+.phrase-holder {
+  padding: 20px 25px;
+  background-color: rgb(217, 217, 218);
+  border-radius: 2px;
+  margin-left: 1.6px;
+  color: rgb(217, 217, 218);
+}
+
+.phrase-word-gap {
+  margin-left: 10px;
+}
+
+.show {
+  color: #000;
+}
+
+.choosen {
+  background-color: var(--color-start);
+  color: #fff;
+}
+
+.correct {
+  background-color: orange;
+  color: #fff;
 }
