@@ -97,11 +97,6 @@ button {
   width: 15px;
 }
 
-.show {
-  color: #000;
-  background-color: #76ce82;
-}
-
 /* Keyboard */
 
 .keyrow {
@@ -126,6 +121,7 @@ button {
   color: #fff;
   background-color: rgb(241, 166, 80);
   box-shadow: 2px 2px 2px 2px rgba(241, 166, 80, 0.692);
+  cursor: pointer;
 }
 
 /* Overlay */
@@ -150,10 +146,6 @@ button {
 .start {
   background-color: var(--color-start);
 }
-
-/* .start-a {
-  color: #fff;
-} */
 
 .win {
   background-color: var(--color-win);
@@ -182,7 +174,7 @@ button {
   padding: 20px 25px;
   background-color: rgb(217, 217, 218);
   border-radius: 2px;
-  margin-left: 1.6px;
+  margin-left: 2px;
   color: rgb(217, 217, 218);
 }
 
@@ -191,10 +183,12 @@ button {
 }
 
 .show {
-  color: #000;
+  color: rgb(255, 255, 255);
+  animation: scaleLetter 1s;
+  background-color: rgb(85, 197, 231);
 }
 
-.choosen {
+.wrong {
   background-color: var(--color-start);
   color: #fff;
 }
@@ -202,4 +196,14 @@ button {
 .correct {
   background-color: orange;
   color: #fff;
+}
+
+@keyframes scaleLetter {
+  0%,
+  90% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
